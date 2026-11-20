@@ -1,0 +1,13 @@
+
+{
+  "name": "smart-life-assistant",
+  "version": "1.0.0",
+  "description": "Smart Life AI Assistant",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
