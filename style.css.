@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080d1b;
+  color: white;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 750px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 5px;
+  border-bottom: 1px solid #263047;
+}
+
+.logo {
+  background: linear-gradient(135deg, #477bff, #9a53ff);
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 18px;
+}
+
+header p {
+  color: #aab5ca;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.online {
+  display: inline-block;
+  background: #32d69a;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+main {
+  flex: 1;
+  padding: 35px 5px;
+}
+
+.welcome {
+  text-align: center;
+  margin: 50px 0 35px;
+}
+
+.welcome-icon {
+  font-size: 45px;
+  color: #8c77ff;
+  margin-bottom: 15px;
+}
+
+.welcome h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.welcome h3 {
+  color: #a98aff;
+  margin-bottom: 12px;
+}
+
+.welcome p {
+  color: #aab5ca;
+  line-height: 1.6;
+}
+
+.suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.suggestions button {
+  padding: 16px 10px;
+  border: 1px solid #303d59;
+  background: #141e32;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.suggestions button:active {
+  background: #293b65;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  background: #172238;
+  padding: 10px;
+  border: 1px solid #35415b;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+}
+
+input::placeholder {
+  color: #8491aa;
+}
+
+#send {
+  background: #7055ff;
+  color: white;
+  border: none;
+  border-radius: 11px;
+  width: 45px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.user-message, .bot-message {
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 13px;
+  line-height: 1.6;
+  max-width: 90%;
+  white-space: pre-wrap;
+}
+
+.user-message {
+  background: #5142bd;
+  margin-left: auto;
+}
+
+.bot-message {
+  background: #18243a;
+  border: 1px solid #303d59;
+  margin-right: auto;
+}
+
+footer {
+  text-align: center;
+  color: #71809c;
+  font-size: 12px;
+  padding: 15px;
+}
+
+@media (max-width: 400px) {
+  .suggestions {
+    grid-template-columns: 1fr;
+  }
+}
