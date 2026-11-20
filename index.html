@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Life Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header>
+      <div class="logo">S</div>
+      <div>
+        <h2>Smart Life Assistant</h2>
+        <p><span class="online"></span> Your smart companion</p>
+      </div>
+    </header>
+
+    <main id="chat">
+      <div class="welcome">
+        <div class="welcome-icon">✦</div>
+        <h1>Hello! 👋</h1>
+        <h3>Welcome to Smart Life Assistant</h3>
+        <p>How can I make your life easier today?</p>
+      </div>
+
+      <div class="suggestions">
+        <button onclick="quickAsk('Teach me something new')">📚 Learn something</button>
+        <button onclick="quickAsk('Give me business ideas')">💡 Business ideas</button>
+        <button onclick="quickAsk('Give me motivation')">⭐ Motivation</button>
+        <button onclick="quickAsk('Help me with technology')">💻 Technology</button>
+      </div>
+    </main>
+
+    <div class="input-area">
+      <input id="message" type="text"
+        placeholder="Ask me anything..."
+        autocomplete="off">
+      <button id="send" onclick="sendMessage()">➤</button>
+    </div>
+
+    <footer>Smart Life Assistant © 2026</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
